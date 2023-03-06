@@ -6,5 +6,12 @@ module.exports.getDate = ()=> {
     month: 'long', 
   }
   return today.toLocaleDateString('en-US', options);
-  // console.log(date);
+}
+
+module.exports.getDay = ()=> {
+  const today = newDate();
+  const options = {
+    weekday: 'long',
+  };
+  return today.toLocaleDateString('en-US', options);
 }
